@@ -11,7 +11,7 @@ export const botConfig = {
   // - "invisible" = appears offline
   presence: {
     // Current online state shown on Discord.
-    status: "online",
+    status: "dnd",
 
     // Activity lines shown under the bot name.
     // `type` number mapping from Discord:
@@ -24,7 +24,7 @@ export const botConfig = {
     activities: [
       {
         name: "Custom Status", // required by Discord API, not shown in the client
-        state: "stalking",     // this is what people actually see
+        state: "Created by: ClockedYourClient",     // this is what people actually see
         type: 4,               // Custom
       },
     ],
@@ -141,7 +141,7 @@ export const botConfig = {
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Titan Bot",
+      text: "AlleywayAutismBot",
       // Footer icon URL (null = no icon).
       icon: null,
     },
@@ -228,7 +228,7 @@ export const botConfig = {
       },
       low: {
         emoji: "🟢",
-        color: "#2ECC71",
+        color: "#2ECC7 1",
         label: "Low",
       },
       medium: {
@@ -249,13 +249,13 @@ export const botConfig = {
     },
 
     // Default priority for new tickets.
-    defaultPriority: "none",
+    defaultPriority: "low",
 
     // Category ID where closed tickets are archived.
-    archiveCategory: null,
+    archiveCategory: 1539242439636680734,
 
     // Channel ID where ticket logs are sent.
-    logChannel: null,
+    logChannel: 1476323596023369748,
   },
 
   // =========================
